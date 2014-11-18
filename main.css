@@ -47,23 +47,26 @@ nav ul:nth-child(3)
 }
 
 section p{
+    margin-top: 20px;
     border: 1px solid gray;
     margin-left: 10px;
-    background-color: Salmon;
-    width: 70%;
-    display: inline-block;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
 }
 
 section{
-    margin-top: 25px;
-    background-color: yellow;
-    border: 3px solid black;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    background-color: white;
     height: auto;
 }
 
 section img{
-    float: right;
-    width: 25%;
+    margin-bottom: 1000px;
+    margin: auto;
+    box-shadow: 5px 5px 10px gray;   
 }
 
 
