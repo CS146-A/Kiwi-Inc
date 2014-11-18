@@ -1,0 +1,27 @@
+* {
+	padding: 10px;
+	margin: 10px;
+}
+
+body{
+	
+}
+nav{
+    background-color: Blue;
+    color: White;
+}
+
+li{
+    display:inline;   
+}
+nav ul:nth-child(1)
+{
+    float:left;
+    
+}
+
+nav ul:nth-child(2)
+{
+    float:right;   
+    margin-right:10%;
+}
