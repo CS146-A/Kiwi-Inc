@@ -6,8 +6,8 @@ body {
     font-family: Avenir;
 }
 
-header ul {
-    
+header {
+    text-align: center;
 }
 
 body{
@@ -19,7 +19,11 @@ nav{
     padding: 10px;
 }
 
-li{
+nav img{
+    height: 35px;
+}
+
+nav li{
     display:inline;
     margin-left: 10px;
 }
@@ -76,22 +80,6 @@ section ol{
 section ul{
     list-style: inside;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .navigation{
     color:white;
