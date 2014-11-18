@@ -1,56 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
 * {
-	padding: 5px;
-	margin: 5px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    text-align: center;
 }
 
 body{
-	width: 66%;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 nav{
-	padding: 10px;
-	background-color: Blue;
-}
-section {
-	background-image: url('light-paper.jpg');
-	border-radius: 10px;
-}
-ol{
-	list-style-position: inside;
-}
-ul {
-	list-style: inside;
-}
-nav li {
-	display: inline;
-	font-size: 2em;
-}
-li {
-	padding-top: 3px;
-	padding-bottom: 1px;
-}
-h1 {
-	font-size: 4em;
-	text-align: center;
-}
-h2 {
-	font-size: 2em;
-}
-nav ul li:nth-child(1)
-{
-    float:left;
-    
+    background-color: #46A4E2;
+    width: 100%;
+    padding: 10px;
 }
 
-nav ul li:nth-child(3)
-{
-    float:right;   
-    margin-right:10%;
+nav img{
+    height: 35px;
 }
-nav ul li:nth-child(2)
+
+nav li{
+    display:inline;
+    margin-left: 10px;
+}
+
+li a{
+    color: white; 
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+nav ul:nth-child(2)
 {
-    float:right;   
-    margin-right:10%;
+   display:inline;
+    color: red;
+}
+
+nav ul:nth-child(3)
+{
+    display:inline;
+    margin-left: 40%;
+    margin-top: -20px;
+}
+
+section p{
+    margin-top: 20px;
+    border: 1px solid gray;
+    margin-left: 10px;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+section{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+}
+
+section img{
+    margin-bottom: 1000px;
+    margin: auto;
+    box-shadow: 5px 5px 10px gray;   
+}
+
+section ol{
+    list-style-position: inside;   
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+section ul{
+    list-style: inside;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+h1 {
+	font-size: 2em;
+}
+h1, h2 {
+	padding-bottom: 5px;
+}
+
+.navigation{
+    color:white;
+}
+
+.navigation:hover{
+       
 }
