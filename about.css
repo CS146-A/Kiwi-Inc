@@ -4,15 +4,28 @@
 }
 
 body{
-	
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.5em;
 }
 nav{
-    background-color: Blue;
-    color: White;
 	padding: 10px;
+	background-color: Blue;
+}
+section {
+	background-image: url('light-paper.jpg');
+	border-radius: 10px;
+}
+ol{
+	list-style-position: inside;
+}
+ul {
+	list-style: inside;
 }
 nav li {
 	display: inline;
+	font-size: 2em;
 }
 li {
 	padding-top: 3px;
@@ -25,13 +38,18 @@ h1 {
 h2 {
 	font-size: 2em;
 }
-nav ul:nth-child(1)
+nav ul li:nth-child(1)
 {
     float:left;
     
 }
 
-nav ul:nth-child(2)
+nav ul li:nth-child(3)
+{
+    float:right;   
+    margin-right:10%;
+}
+nav ul li:nth-child(2)
 {
     float:right;   
     margin-right:10%;
