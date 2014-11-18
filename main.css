@@ -21,6 +21,7 @@ nav{
 
 nav img{
     height: 35px;
+    display: inline-block;
 }
 
 nav li{
@@ -51,8 +52,7 @@ nav ul:nth-child(3)
 }
 
 section p{
-    margin-top: 20px;
-    border: 1px solid gray;
+    margin-top: 10px;
     margin-left: 10px;
     background-color: white;
     width: 80%;
