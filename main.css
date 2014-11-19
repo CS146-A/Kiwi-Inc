@@ -1,64 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
 * {
     margin: 0px;
 }
 
 body {
-    font-family: Avenir;
+    font-family: 'Cabin', sans-serif;
+	font-size: 1.25em;
+	overflow-y: scroll;
 }
-
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 header {
     text-align: center;
-}
-
-body{
-	
 }
 nav{
     background-color: #46A4E2;
     width: 100%;
     padding: 10px;
 }
-
 nav img{
     height: 35px;
     display: inline-block;
 }
-
 nav li{
     display:inline;
     margin-left: 10px;
 }
-
 li a{
     color: white; 
     text-decoration: none;
 }
-
 li a:hover{
     text-decoration: underline;
 }
-
 nav ul:nth-child(2)
 {
-   display:inline;
+	display:inline;
     color: red;
 }
-
 nav ul:nth-child(3)
 {
     display:inline;
     margin-left: 40%;
     margin-top: -20px;
 }
-
 section p{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     background-color: white;
     width: 80%;
     margin-left: 10%;
 }
-
 section{
     width: 80%;
     margin-left: 10%;
@@ -66,25 +61,45 @@ section{
     background-color: white;
     height: auto;
 }
-
 section img{
     margin-bottom: 1000px;
     margin: auto;
     box-shadow: 5px 5px 10px gray;   
 }
-
 section ol{
-    list-style-position: inside;   
+    list-style-position: inside;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
 }
-
 section ul{
     list-style: inside;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
 }
-
+h1 {
+	font-size: 2em;
+}
+h1, h2 {
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+footer {
+	/*position: absolute;*/
+	margin-top: 20px;
+	/*right: 0;*/
+	bottom: 0;
+	/*left: 0;*/
+	/*padding: 1rem;*/
+	width: 100%;
+	float: both;
+}
 .navigation{
     color:white;
 }
-
 .navigation:hover{
        
 }
