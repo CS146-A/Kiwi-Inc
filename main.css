@@ -2,16 +2,16 @@
 * {
     margin: 0px;
 }
-
-body {
-    font-family: 'Cabin', sans-serif;
-	font-size: 1.25em;
+html {
 	overflow-y: scroll;
 }
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+	font-size: 1.25em;
 }
 header {
     text-align: center;
