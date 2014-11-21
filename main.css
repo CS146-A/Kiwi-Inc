@@ -23,7 +23,13 @@ header {
 nav{
     background-color: #46A4E2;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+nav ul{
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 nav img{
     height: 35px;
@@ -31,8 +37,9 @@ nav img{
 }
 nav li{
     display:inline;
-    margin-left: 10px;
+    padding: 10px;
 }
+
 li a{
     color: white; 
     text-decoration: none;
@@ -40,34 +47,24 @@ li a{
 li a:hover{
     text-decoration: underline;
 }
-nav ul{
-	display:inline;
-}
+
 section p{
     margin-top: 10 px;
-    margin-left: 10px;
-    background-color: white;
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
 }
 section{
     width: 80%;
-	margin: 0 auto;
-    margin-left: 10%;
+    margin: auto;
     text-align: center;
-    background-color: white;
-	height: 90%;
 }
 section img{
-    margin-bottom: 1000px;
-    margin: auto;
     box-shadow: 5px 5px 10px gray;   
 }
 section ol{
     list-style-position: inside;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 50%;
+	margin: auto;
 	text-align: left;
 }
 section ul{
@@ -91,5 +88,6 @@ footer {
 }
 
 footer nav{
-    text-align: center;   
+    text-align: center;
+    padding: 10px 0px 10px 0px
 }
