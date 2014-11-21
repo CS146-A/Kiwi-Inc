@@ -4,6 +4,7 @@
 }
 html {
 	overflow-y: scroll;
+	height: 100%;
 }
 html, body {
 	max-width: 100%;
@@ -12,6 +13,9 @@ html, body {
 body {
     font-family: 'Cabin', sans-serif;
 	font-size: 1.25em;
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 4rem;
 }
 header {
     text-align: center;
@@ -36,19 +40,11 @@ li a{
 li a:hover{
     text-decoration: underline;
 }
-nav ul:nth-child(2)
-{
+nav ul{
 	display:inline;
-    color: red;
-}
-nav ul:nth-child(3)
-{
-    display:inline;
-    margin-left: 40%;
-    margin-top: -20px;
 }
 section p{
-    margin-top: 20px;
+    margin-top: 10 px;
     margin-left: 10px;
     background-color: white;
     width: 80%;
@@ -56,10 +52,11 @@ section p{
 }
 section{
     width: 80%;
+	margin: 0 auto;
     margin-left: 10%;
     text-align: center;
     background-color: white;
-    height: auto;
+	height: 90%;
 }
 section img{
     margin-bottom: 1000px;
@@ -88,18 +85,11 @@ h1, h2 {
 	padding-top: 10px;
 }
 footer {
-	/*position: absolute;*/
-	margin-top: 20px;
-	/*right: 0;*/
+	position: absolute;
 	bottom: 0;
-	/*left: 0;*/
-	/*padding: 1rem;*/
+	padding: 1rem;
 	width: 100%;
-	float: both;
 }
 .navigation{
     color:white;
-}
-.navigation:hover{
-       
 }
