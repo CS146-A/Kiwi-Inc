@@ -41,6 +41,31 @@ Questions for the form
   (o)Plastic
   (o)Aluminum
   (o)Other Metals
-10)
+10) Which material would you prefer for the screen?
+  (o)Gorilla Glass
+  (o)Sapphire
+  (o)Plastic
+  (o)Flexible Glass
+11) How important is the weight of the phone to you?
+  (o)Very Important
+  (o)Important
+  (o)Average
+  (o)Not important
+12) Would you mind having a heavier phone if it meant longer battery life?
+  (o)Yes
+  (o)No
+13) Is the front facing camera important to you?
+  (o)Yes
+  (o)No
+14) How much storage would you want in your phone?
+  (o)16gb
+  (o)32gb
+  (o)64gb
+  (o)128gb
+  (o)256gb
+  (o)512gb
+15) Would you want to be able to upgrade the memory of the phone with an SD Card?
+  (o)Yes
+  (o)No
 
 
