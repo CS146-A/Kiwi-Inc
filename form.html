@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Kiwi Inc. - Form</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+        <header>
+            <nav>
+				<img src = "KiwiLogoWithText.png" alt = "Kiwi Icon"/>
+                <ul>
+                    <li>
+						<a href = "index.html">Home</a>
+					</li>
+                    <li>
+						<a href = "about.html">About</a>
+					</li>
+					<li>
+						<a href="form.html">Form</a>
+					</li>
+               </ul>
+            </nav>
+        </header>        
+		<section>
+			<h1>Give us your input!</h1>
+			<h2>Fill out the form below!</h2>
+			<form name="kiwiForm" action="showInputs()">
+				What smartphone do you currently own?
+				<input type="text" name="currentPhone" size="20" maxlength="30" required autofocus/>
+				How important do you currently own?
+				<input type="radio" name="cameraImportance" value="Very Important" selected required/>
+				<input type="radio" name="cameraImportance" value="Important"/>
+				<input type="radio" name="cameraImportance" value="Average"/>
+				<input type="radio" name="cameraImportance" value="Not Important"/>
+				What is the ideal screen size to you?
+				<input type="radio" name="idealScreenSize" value="5.5 inches" required/>
+				<input type="radio" name="idealScreenSize" value="4.7 inches"/>
+				<input type="radio" name="idealScreenSize" value="4 inches"/>
+				<input type="radio" name="idealScreenSize" value="3.5 inches"/>
+				Is a fingerprint scanner important to you?
+				<input type="radio" name="fingerPrintScanner" value="Yes" required/>
+				<input type="radio" name="fingerPrintScanner" value="No"/>
+				<input type="radio" name="fingerPrintScanner" value="Don't really care"/>
+				Would you prefer the headphone jack on the top or bottom?
+				<input type="radio" name="headphoneLocation" value="Top" required/>
+				<input type="radio" name="headphoneLocation" value="Bottom"/>
+				Should we customize android or leave stock android?
+				<input type="radio" name="android" value="Customize it" required/>
+				<input type="radio" name="android" value="Leave it alone"/>
+				If you had to pick one of the following current phones, which would you choose:
+				<input type="radio" name="phones" value="Samsung Galaxy" required/>
+				<input type="radio" name="phones" value="HTC One (M8)"/>
+				<input type="radio" name="phones" value="LG G3"/>
+				<input type="radio" name="phones" value="iPhone 6"/>
+				<input type="radio" name="phones" value="iPhone 6 Plus"/>
+				<input type="radio" name="phones" value="Nokia Lumia Icon"/>
+				<input type="radio" name="phones" value="Motorola Droid Turbo"/>
+				Would you want your phone to be waterproof?
+				<input type="radio" name="waterproof" value="Yes" required/>
+				<input type="radio" name="waterproof" value="No"/>
+				<input type="radio" name="waterproof" value="Yes, but it isn't a big deal"/>
+				What material would you prefer the phone to be primarily made out of?
+				<input type="radio" name="bodyMaterial" value="Plastic" required/>
+				<input type="radio" name="bodyMaterial" value="Aluminum"/>
+				<input type="radio" name="bodyMaterial" value="Other Metals"/>
+				Which material would you like the screen to be made out of?
+				<input type="radio" name="screenMaterial" value="Gorilla Glass" required/>
+				<input type="radio" name="screenMaterial" value="Sapphire Glass"/>
+				<input type="radio" name="screenMaterial" value="Plastic"/>
+				<input type="radio" name="screenMaterial" value="Flexible Glass"/>
+				How important is the weight of the phone to you?
+				<input type="radio" name="phoneWeight" value="Very Important" required/>
+				<input type="radio" name="phoneWeight" value="Important"/>
+				<input type="radio" name="phoneWeight" value="Average"/>
+				<input type="radio" name="phoneWeight" value="Not Important"/>
+				Would you mind hacing a heavier phone if it meant longer battery life?
+				<input type="radio" name="batteryWeight" value="Yes" required/>
+				<input type="radio" name="batteryWeight" value="No"/>
+				Is a front facing camera important to you?
+				<input type="radio" name="frontCamera" value="Yes" required/>
+				<input type="radio" name="frontCamera" value="No"/>
+				How much storage would you want on your phone?
+				<input type="radio" name="storageAmount" value="16 GB" required/>
+				<input type="radio" name="storageAmount" value="32 GB"/>
+				<input type="radio" name="storageAmount" value="64 GB"/>
+				<input type="radio" name="storageAmount" value="128 GB"/>
+				<input type="radio" name="storageAmount" value="256 GB"/>
+				<input type="radio" name="storageAmount" value="512 GB"/>
+				WOuld you want to be able to upgrade the amount of storage memory of the phone with an SD card?
+				<input type="radio" name="upgradeStorage" value="Yes"/>
+				<input type="radio" name="upgradeStorage" value="No"/>
+				
+				<input type="" name=""/>
+			</form>			
+		</section>		
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href = "index.html">Home</a>
+					</li>
+					<li>
+						<a href = "about.html">About</a>
+					</li>
+					<li>
+						<a href="form.html">Form</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<script>
+			function showInputs()
+			{
+				var inputs = document.getElementsByTagName("input");
+				for(i in inputs)
+				{
+					if((inputs[i].type !="radio" && inputs[i].type!="checkbox") || inputs[i].selected)
+					{
+						document.write(inputs[i].value);
+					}
+				}
+			}
+		</script>
+    </body>
+</html>
