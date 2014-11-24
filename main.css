@@ -111,7 +111,7 @@ footer {
     }
 }
 
-<<<<<<< HEAD
+
 
 /* Forms */
 form{
@@ -126,8 +126,8 @@ form:first-child label
 label{
   background-color: red;   
 }
-=======
+
 @media screen and (min-width: 801px){
     /* Computer */
 }
->>>>>>> FETCH_HEAD
+
