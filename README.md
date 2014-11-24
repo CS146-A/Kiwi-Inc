@@ -67,5 +67,10 @@ Questions for the form
 15) Would you want to be able to upgrade the memory of the phone with an SD Card?
   (o)Yes
   (o)No
-
+16) How much RAM do you want in a phone
+  (o)512MB
+  (o)1GB
+  (o)2GB
+  (o)4GB
+  (o)8GB
 
