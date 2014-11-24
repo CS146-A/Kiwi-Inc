@@ -91,3 +91,18 @@ footer nav{
     text-align: center;
     padding: 10px 0px 10px 0px
 }
+
+
+/* Forms */
+form{
+    text-align: left;
+}
+
+form:first-child label
+{
+    background-color:red;   
+}
+
+label{
+  background-color: red;   
+}
