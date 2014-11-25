@@ -25,11 +25,11 @@
 		<section>
 			<h1>Give us your input!</h1>
 			<h2>Fill out the form below!</h2>
-			<form name="kiwiForm" action="showInputs()">
+			<form name="kiwiForm" onsubmit="return showInputs();" method="POST">
                 
                 <fieldset><legend>Your Phone</legend>
                     <label for = "currentPhone">What smartphone do you currently own?</label>
-                    <input type="text" name="currentPhone" size="20" maxlength="30" required autofocus id = "currentPhone"/>
+                    <input type="text" name="currentPhone" size="20" maxlength="30" required autofocus id = "currentPhone" pattern=".+"/>
                     
                 </fieldset>
                 
@@ -37,7 +37,7 @@
                     How important is the camera quality to you?
                     <br/>
                     
-                    <input type="radio" name="cameraImportance" value="Very Important" selected required id = "cameraImportanceVeryImportant"/>
+                    <input type="radio" name="cameraImportance" value="Very Important" required id = "cameraImportanceVeryImportant"/>
                     <label for = "cameraImportanceVeryImportant">Very Important</label>
                     <br/>
                     
@@ -248,7 +248,7 @@
                     How much storage would you want on your phone?
                     <br/>
                     
-                    <input type="radio" name="storageAmount" value="16 GB" required id = "storageAmount16GB"/>
+                    <input type="radio" name="storageAmount" value="16 GB" required id = "storageAmount16GB" required/>
                     <label for = "storageAmount16GB">16 GB</label>
                     <br/>
 
@@ -276,15 +276,17 @@
                     Would you want to be able to upgrade the amount of storage memory of the phone with an SD card?
                     <br/>
 
-                    <input type="radio" name="upgradeStorage" value="Yes" id = "upgradeStorageYes"/>
+                    <input type="radio" name="upgradeStorage" value="Yes" id = "upgradeStorageYes" required/>
                     <label for = "upgradeStorageYes">Yes</label>
                     <br/>
 
                     <input type="radio" name="upgradeStorage" value="No" id = "upgradeStorageNo"/>
                     <label for = "upgradeStorageNo">No</label>
                     <br/>
-
+					
                 </fieldset>
+				
+				<input type="submit" />
 			</form>			
 		</section>		
 		<footer>
@@ -308,11 +310,14 @@
 				var inputs = document.getElementsByTagName("input");
 				for(i in inputs)
 				{
-					if((inputs[i].type !="radio" && inputs[i].type!="checkbox") || inputs[i].selected)
+					if((inputs[i].type !="radio" && inputs[i].type !="checkbox") || inputs[i].checked && !inputs[i].disabled && inputs[i].type != "submit")
 					{
-						document.write(inputs[i].value);
+						console.log(inputs[i].value);
 					}
+					inputs[i].disabled = true;
 				}
+				alert("Thanks for your interest!");
+				return false;
 			}
 		</script>
     </body>

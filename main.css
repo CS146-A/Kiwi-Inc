@@ -93,7 +93,33 @@ footer {
 .navigation{
     color:white;
 }
-
+/* Forms */
+form{
+	width: 70%;
+    text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+form:first-child label
+{
+    background-color:red;   
+}
+input:required:invalid{
+	border-color:red;
+	outline: none;
+}
+input:required:invalid:focus{
+	border-color: orange;
+	outline: none;
+}
+input:required:valid{
+	border-color:green;
+	outline: none;
+}
+label{
+    font-size:0.8em;
+    
+}
 @media screen and (max-width: 480px){
  /*Phone */  
     section img{
@@ -110,28 +136,6 @@ footer {
      font-size: 1em;   
     }
 }
-
-
-
-/* Forms */
-form{
-	width: 70%;
-    text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-form:first-child label
-{
-    background-color:red;   
-}
-
-label{
-    font-size:0.8em;
-    
-}
-
 @media screen and (min-width: 801px){
     /* Computer */
 }
-
