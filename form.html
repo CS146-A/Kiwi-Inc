@@ -58,19 +58,19 @@
                     <br/>
                     
                     <input type="radio" name="idealScreenSize" value="5.5 inches" required id = "idealScreenSize5.5"/>
-                    <label for = "idealScreenSize5.5">5.5"</label>
+                    <label for = "idealScreenSize5.5">5.5" (iPhone 6+)</label>
                     <br/>
                     
                     <input type="radio" name="idealScreenSize" value="4.7 inches" id = "idealScreenSize4.7"/>
-                    <label for = "idealScreenSize4.7">4.7"</label>
+                    <label for = "idealScreenSize4.7">4.7" (iPhone 6)</label>
                     <br/>
                     
                     <input type="radio" name="idealScreenSize" value="4 inches" id = "idealScreenSize4.0"/>
-                    <label for = "idealScreenSize4.0">4.0"</label>
+                    <label for = "idealScreenSize4.0">4.0" (iPhone 5/s/c)</label>
                     <br/>
                     
                     <input type="radio" name="idealScreenSize" value="3.5 inches" id = "idealScreenSize3.5"/>
-                    <label for = "idealScreenSize3.5">3.5"</label>
+                    <label for = "idealScreenSize3.5">3.5" (iPhone 4/s)</label>
                     <br/>
                     <br/>
                     
@@ -102,15 +102,19 @@
                     <br/>
                     <br/>
                     
-                    Should we customize android or leave stock android?
+                    Would you like additional custom software features in addition to the basic android ones?
                     <br/>
                     
                     <input type="radio" name="android" value="Customize it" required id = "androidCustomize"/>
-                    <label for = "androidCustomize">Customize it</label>
+                    <label for = "androidCustomize">Yes, add custom features</label>
                     <br/>
                     
                     <input type="radio" name="android" value="Leave it alone" id = "androidLeaveAlone"/>
-                    <label for = "androidLeaveAlone">Leave it alone</label>
+                    <label for = "androidLeaveAlone">No, leave it alone</label>
+                    <br/>
+					
+					<input type="radio" name="android" value="I don't care" id = "androidDontCare"/>
+                    <label for = "androidDontCare">I don't care/know</label>
                     <br/>
                     
                 </fieldset>
@@ -165,7 +169,7 @@
                     <br/>
                     <br/>
 
-                    What material would you prefer the phone to be primarily made out of?
+                    What material would you prefer the phone body to be made out of?
                     <br/>
 
                     <input type="radio" name="bodyMaterial" value="Plastic" required id = "bodyMaterialPlastic"/>
@@ -201,7 +205,19 @@
                     <br/>
                     <br/>
 
-                    How important is the weight of the phone to you?
+                    Which of the following would you prefer?
+                    <br/>
+
+                    <input type="radio" name="batteryWeight" value="A heavier phone with longer battery life" required id = "batteryWeightYes"/>
+                    <label for = "batteryWeightYes">A heavier phone with longer battery life</label>
+                    <br/>
+
+                    <input type="radio" name="batteryWeight" value="A lighter phone with less battery life" id = "batteryWeightNo"/>
+                    <label for = "batteryWeightNo">A lighter phone with less battery life</label>
+                    <br/>
+					<br/>
+					
+					How important is the lightness of the phone to you?
                     <br/>
 
                     <input type="radio" name="phoneWeight" value="Very Important" required id = "phoneWeightVeryImportant"/>
@@ -220,18 +236,6 @@
                     <label for = "phoneWeightNotImportant">Not Important</label>
                     <br/>
                     <br/>
-
-                    Would you mind having a heavier phone if it meant longer battery life?
-                    <br/>
-
-                    <input type="radio" name="batteryWeight" value="Yes" required id = "batteryWeightYes"/>
-                    <label for = "batteryWeightYes">Yes</label>
-                    <br/>
-
-                    <input type="radio" name="batteryWeight" value="No" id = "batteryWeightNo"/>
-                    <label for = "batteryWeightNo">No</label>
-                    <br/>
-					<br/>
 
                     Is a front facing camera important to you?
                     <br/>
