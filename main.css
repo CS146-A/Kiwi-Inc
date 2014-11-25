@@ -115,7 +115,10 @@ footer {
 
 /* Forms */
 form{
+	width: 70%;
     text-align: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 form:first-child label
