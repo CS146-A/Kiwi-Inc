@@ -7,200 +7,291 @@
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<header>
-			<nav>
+        <header>
+            <nav>
 				<img src = "KiwiLogoWithText.png" alt = "Kiwi Icon"/>
-				<ul>
-					<li>
+                <ul>
+                    <li>
 						<a href = "index.html">Home</a>
 					</li>
-					<li>
+                    <li>
 						<a href = "about.html">About</a>
 					</li>
 					<li>
 						<a href="form.html">Form</a>
 					</li>
-			   </ul>
-			</nav>
-		</header>        
+               </ul>
+            </nav>
+        </header>        
 		<section>
 			<h1>Give us your input!</h1>
 			<h2>Fill out the form below!</h2>
-			<form name="kiwiForm" onsubmit="return showInputs();" method="post">				
-				<fieldset>
-					<legend>Your Phone</legend>
-					<label for = "currentPhone"><h3>What smartphone do you currently own?</h3></label>
-					<input type="text" name="currentPhone" size="20" maxlength="30" required autofocus id = "currentPhone" pattern=".+"/>
-				</fieldset>				
-				<fieldset>
-					<legend>Features</legend>
-					<h3>How important is the camera quality to you?</h3>					
-					<input type="radio" name="cameraImportance" value="Very Important" required id = "cameraImportanceVeryImportant"/>
-					<label for = "cameraImportanceVeryImportant">Very Important</label>
-					<br/>
-					<input type="radio" name="cameraImportance" value="Important" id = "cameraImportanceImportant"/>      
-					<label for = "cameraImportanceImportant">Important</label>
-					<br/>
-					<input type="radio" name="cameraImportance" value="Average" id = "cameraImportanceAverage"/>
-					<label for = "cameraImportanceAverage">Average</label>
-					<br/>
-					<input type="radio" name="cameraImportance" value="Not Important" id = "cameraImportanceNotImportant"/>
-					<label for = "cameraImportanceNotImportant">Not Important</label>
-					<br/>
-					<h3>What is an ideal screen size for you?</h3>                    
-					<input type="radio" name="idealScreenSize" value="5.5 inches" required id = "idealScreenSize5.5"/>
-					<label for = "idealScreenSize5.5">5.5" (iPhone 6+)</label>
-					<br/>
-					<input type="radio" name="idealScreenSize" value="4.7 inches" id = "idealScreenSize4.7"/>
-					<label for = "idealScreenSize4.7">4.7" (iPhone 6)</label>
-					<br/>
-					<input type="radio" name="idealScreenSize" value="4 inches" id = "idealScreenSize4.0"/>
-					<label for = "idealScreenSize4.0">4.0" (iPhone 5/s/c)</label>
-					<br/>
-					<input type="radio" name="idealScreenSize" value="3.5 inches" id = "idealScreenSize3.5"/>
-					<label for = "idealScreenSize3.5">3.5" (iPhone 4/s)</label>
-					<br/>
-					<h3>Is a fingerprint scanner important to you?</h3>                    
-					<input type="radio" name="fingerPrintScanner" value="Yes" required id = "fingerPrintScannerYes"/>
-					<label for = "fingerPrintScannerYes">Yes</label>
-					<br/>
-					<input type="radio" name="fingerPrintScanner" value="No" id = "fingerPrintScannerNo"/>
-					<label for = "fingerPrintScannerNo">No</label>
-					<br/>
-					<input type="radio" name="fingerPrintScanner" value="Don't really care" id = "fingerPrintScannerDontCare"/>
-					<label for = "fingerPrintScannerDontCare">I don't really care.</label>
-					<br/>
-					<h3>Would you prefer the headphone jack on the top or bottom?</h3>                    
-					<input type="radio" name="headphoneLocation" value="Top" required id = "headphoneLocationTop"/>
-					<label for = "headphoneLocationTop">Top</label>
-					<br/>
-					<input type="radio" name="headphoneLocation" value="Bottom" id = "headphoneLocationBottom"/>
-					<label for = "headphoneLocationBottom">Bottom</label>
-					<br/>
-					<h3>Would you like additional custom software features in addition to the basic android ones?</h3>                    
-					<input type="radio" name="android" value="Customize it" required id = "androidCustomize"/>
-					<label for = "androidCustomize">Yes, add custom features</label>
-					<br/>
-					<input type="radio" name="android" value="Leave it alone" id = "androidLeaveAlone"/>
-					<label for = "androidLeaveAlone">No, leave it alone</label>
-					<br/>
+			<form name="kiwiForm" onsubmit="return showInputs();" method="POST">
+                
+                <fieldset><legend>Your Phone</legend>
+                    <label for = "currentPhone">What smartphone do you currently own?</label>
+                    <input type="text" name="currentPhone" size="20" maxlength="30" required autofocus id = "currentPhone" pattern=".+"/>
+                    
+                </fieldset>
+                
+                <fieldset><legend>Features</legend>
+                    How important is the camera quality to you?
+                    <br/>
+                    
+                    <input type="radio" name="cameraImportance" value="Very Important" required id = "cameraImportanceVeryImportant"/>
+                    <label for = "cameraImportanceVeryImportant">Very Important</label>
+                    <br/>
+                    
+                    <input type="radio" name="cameraImportance" value="Important" id = "cameraImportanceImportant"/>      
+                    <label for = "cameraImportanceImportant">Important</label>
+                    <br/>
+                    
+                    <input type="radio" name="cameraImportance" value="Average" id = "cameraImportanceAverage"/>
+                    <label for = "cameraImportanceAverage">Average</label>
+                    <br/>
+
+                    <input type="radio" name="cameraImportance" value="Not Important" id = "cameraImportanceNotImportant"/>
+                    <label for = "cameraImportanceNotImportant">Not Important</label>
+                    <br/>
+                    <br/>
+            
+                    What is an ideal screen size for you?
+                    <br/>
+                    
+                    <input type="radio" name="idealScreenSize" value="5.5 inches" required id = "idealScreenSize5.5"/>
+                    <label for = "idealScreenSize5.5">5.5" (iPhone 6+)</label>
+                    <br/>
+                    
+                    <input type="radio" name="idealScreenSize" value="4.7 inches" id = "idealScreenSize4.7"/>
+                    <label for = "idealScreenSize4.7">4.7" (iPhone 6)</label>
+                    <br/>
+                    
+                    <input type="radio" name="idealScreenSize" value="4 inches" id = "idealScreenSize4.0"/>
+                    <label for = "idealScreenSize4.0">4.0" (iPhone 5/s/c)</label>
+                    <br/>
+                    
+                    <input type="radio" name="idealScreenSize" value="3.5 inches" id = "idealScreenSize3.5"/>
+                    <label for = "idealScreenSize3.5">3.5" (iPhone 4/s)</label>
+                    <br/>
+                    <br/>
+                    
+                    Is a fingerprint scanner important to you?
+                    <br/>
+                    
+                    <input type="radio" name="fingerPrintScanner" value="Yes" required id = "fingerPrintScannerYes"/>
+                    <label for = "fingerPrintScannerYes">Yes</label>
+                    <br/>
+                    
+                    <input type="radio" name="fingerPrintScanner" value="No" id = "fingerPrintScannerNo"/>
+                    <label for = "fingerPrintScannerNo">No</label>
+                    <br/>
+                    
+                    <input type="radio" name="fingerPrintScanner" value="Don't really care" id = "fingerPrintScannerDontCare"/>
+                    <label for = "fingerPrintScannerDontCare">I don't really care.</label>
+                    <br/>
+                    <br/>
+                    
+                    Would you prefer the headphone jack on the top or bottom?
+                    <br/>
+                    
+                    <input type="radio" name="headphoneLocation" value="Top" required id = "headphoneLocationTop"/>
+                    <label for = "headphoneLocationTop">Top</label>
+                    <br/>
+                    
+                    <input type="radio" name="headphoneLocation" value="Bottom" id = "headphoneLocationBottom"/>
+                    <label for = "headphoneLocationBottom">Bottom</label>
+                    <br/>
+                    <br/>
+                    
+                    Would you like additional custom software features in addition to the basic android ones?
+                    <br/>
+                    
+                    <input type="radio" name="android" value="Customize it" required id = "androidCustomize"/>
+                    <label for = "androidCustomize">Yes, add custom features</label>
+                    <br/>
+                    
+                    <input type="radio" name="android" value="Leave it alone" id = "androidLeaveAlone"/>
+                    <label for = "androidLeaveAlone">No, leave it alone</label>
+                    <br/>
+					
 					<input type="radio" name="android" value="I don't care" id = "androidDontCare"/>
-					<label for = "androidDontCare">I don't care/know</label>
+                    <label for = "androidDontCare">I don't care/know</label>
+                    <br/>
+                    
+                </fieldset>
+                
+                <fieldset><legend>Hardware</legend>
+                    
+                    If you had to pick one of the following current phones, which would you choose:
+                    <br/>
+
+                    <input type="radio" name="phones" value="Samsung Galaxy S5" required id = "Samsung Galaxy"/>
+                    <label for = "Samsung Galaxy">Samsung Galaxy</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="HTC One (M8)" id = "HTC One (M8)"/>
+                    <label for = "HTC One (M8)">HTC One (M8)</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="LG G3" id = "LG G3"/>
+                    <label for = "LG G3">LG G3</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="iPhone 6" id = "iPhone 6"/>
+                    <label for = "iPhone 6">iPhone 6</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="iPhone 6 Plus" id = "iPhone 6 Plus"/>
+                    <label for = "iPhone 6 Plus">iPhone 6 Plus</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="Nokia Lumia Icon" id = "Nokia Lumia Icon"/>
+                    <label for = "Nokia Lumia Icon">Nokia Lumia Icon</label>
+                    <br/>
+
+                    <input type="radio" name="phones" value="Motorola Droid Turbo" id = "Motorola Droid Turbo"/>
+                    <label for = "Motorola Droid Turbo">Motoral Droid Turbo</label>
+                    <br/>
+                    <br/>
+
+                    Would you want your phone to be waterproof?
+                    <br/>
+
+                    <input type="radio" name="waterproof" value="Yes" required id = "waterproofYes"/>
+                    <label for = "waterproofYes">Yes</label>
+                    <br/>
+
+                    <input type="radio" name="waterproof" value="No" id = "waterproofNo"/>
+                    <label for = "waterproofNo">No</label>
+                    <br/>
+
+                    <input type="radio" name="waterproof" value="Yes, but it isn't a big deal" id = "YesNotABigDeal"/>
+                    <label for = "YesNotABigDeal">Yes, but it isn't a big deal</label>
+                    <br/>
+                    <br/>
+
+                    What material would you prefer the phone body to be made out of?
+                    <br/>
+
+                    <input type="radio" name="bodyMaterial" value="Plastic" required id = "bodyMaterialPlastic"/>
+                    <label for = "bodyMaterialPlastic">Plastic</label>
+                    <br/>
+
+                    <input type="radio" name="bodyMaterial" value="Aluminum" id = "bodyMaterialAluminum"/>
+                    <label for = "bodyMaterialAluminum">Aluminum</label>
+                    <br/>
+
+                    <input type="radio" name="bodyMaterial" value="Other Metals" id = "bodyMaterialOtherMetals"/>
+                    <label for = "bodyMaterialOtherMetals">Other Metals</label>
+                    <br/>
+                    <br/>
+
+                    Which material would you like the screen to be made out of?
+                    <br/>
+
+                    <input type="radio" name="screenMaterial" value="Gorilla Glass" required id = "screenMaterialGorillaGlass"/>
+                    <label for = "screenMaterialGorillaGlass">Gorilla Glass</label>
+                    <br/>
+
+                    <input type="radio" name="screenMaterial" value="Sapphire Glass" id = "screenMaterialSapphireGlass"/>
+                    <label for = "screenMaterialSapphireGlass">Sapphire Glass</label>
+                    <br/>
+
+                    <input type="radio" name="screenMaterial" value="Plastic" id = "screenMaterialPlastic"/>
+                    <label for = "screenMaterialPlastic">Plastic</label>
+                    <br/>
+
+                    <input type="radio" name="screenMaterial" value="Flexible Glass" id = "screenMaterialFlexibleGlass"/>
+                    <label for = "screenMaterialFlexibleGlass">Flexible Glass</label>
+                    <br/>
+                    <br/>
+
+                    Which of the following would you prefer?
+                    <br/>
+
+                    <input type="radio" name="batteryWeight" value="A heavier phone with longer battery life" required id = "batteryWeightYes"/>
+                    <label for = "batteryWeightYes">A heavier phone with longer battery life</label>
+                    <br/>
+
+                    <input type="radio" name="batteryWeight" value="A lighter phone with less battery life" id = "batteryWeightNo"/>
+                    <label for = "batteryWeightNo">A lighter phone with less battery life</label>
+                    <br/>
 					<br/>
-				</fieldset>				
-				<fieldset>
-					<legend>Hardware</legend>
-					<h3>If you had to pick one of the following current phones, which would you choose:</h3>
-					<input type="radio" name="phones" value="Samsung Galaxy S5" required id = "Samsung Galaxy"/>
-					<label for = "Samsung Galaxy">Samsung Galaxy</label>
-					<br/>
-					<input type="radio" name="phones" value="HTC One (M8)" id = "HTC One (M8)"/>
-					<label for = "HTC One (M8)">HTC One (M8)</label>
-					<br/>
-					<input type="radio" name="phones" value="LG G3" id = "LG G3"/>
-					<label for = "LG G3">LG G3</label>
-					<br/>
-					<input type="radio" name="phones" value="iPhone 6" id = "iPhone 6"/>
-					<label for = "iPhone 6">iPhone 6</label>
-					<br/>
-					<input type="radio" name="phones" value="iPhone 6 Plus" id = "iPhone 6 Plus"/>
-					<label for = "iPhone 6 Plus">iPhone 6 Plus</label>
-					<br/>
-					<input type="radio" name="phones" value="Nokia Lumia Icon" id = "Nokia Lumia Icon"/>
-					<label for = "Nokia Lumia Icon">Nokia Lumia Icon</label>
-					<br/>
-					<input type="radio" name="phones" value="Motorola Droid Turbo" id = "Motorola Droid Turbo"/>
-					<label for = "Motorola Droid Turbo">Motoral Droid Turbo</label>
-					<br/>
-					<h3>Would you want your phone to be waterproof?</h3>
-					<input type="radio" name="waterproof" value="Yes" required id = "waterproofYes"/>
-					<label for = "waterproofYes">Yes</label>
-					<br/>
-					<input type="radio" name="waterproof" value="No" id = "waterproofNo"/>
-					<label for = "waterproofNo">No</label>
-					<br/>
-					<input type="radio" name="waterproof" value="Yes, but it isn't a big deal" id = "YesNotABigDeal"/>
-					<label for = "YesNotABigDeal">Yes, but it isn't a big deal</label>
-					<br/>
-					<h3>What material would you prefer the phone body to be made out of?</h3>
-					<input type="radio" name="bodyMaterial" value="Plastic" required id = "bodyMaterialPlastic"/>
-					<label for = "bodyMaterialPlastic">Plastic</label>
-					<br/>
-					<input type="radio" name="bodyMaterial" value="Aluminum" id = "bodyMaterialAluminum"/>
-					<label for = "bodyMaterialAluminum">Aluminum</label>
-					<br/>
-					<input type="radio" name="bodyMaterial" value="Other Metals" id = "bodyMaterialOtherMetals"/>
-					<label for = "bodyMaterialOtherMetals">Other Metals</label>
-					<br/>
-					<h3>Which material would you like the screen to be made out of?</h3>
-					<input type="radio" name="screenMaterial" value="Gorilla Glass" required id = "screenMaterialGorillaGlass"/>
-					<label for = "screenMaterialGorillaGlass">Gorilla Glass</label>
-					<br/>
-					<input type="radio" name="screenMaterial" value="Sapphire Glass" id = "screenMaterialSapphireGlass"/>
-					<label for = "screenMaterialSapphireGlass">Sapphire Glass</label>
-					<br/>
-					<input type="radio" name="screenMaterial" value="Plastic" id = "screenMaterialPlastic"/>
-					<label for = "screenMaterialPlastic">Plastic</label>
-					<br/>
-					<input type="radio" name="screenMaterial" value="Flexible Glass" id = "screenMaterialFlexibleGlass"/>
-					<label for = "screenMaterialFlexibleGlass">Flexible Glass</label>
-					<br/>
-					<h3>Which of the following would you prefer?</h3>
-					<input type="radio" name="batteryWeight" value="A heavier phone with longer battery life" required id = "batteryWeightYes"/>
-					<label for = "batteryWeightYes">A heavier phone with longer battery life</label>
-					<br/>
-					<input type="radio" name="batteryWeight" value="A lighter phone with less battery life" id = "batteryWeightNo"/>
-					<label for = "batteryWeightNo">A lighter phone with less battery life</label>
-					<br/>
-					<h3>How important is the lightness of the phone to you?</h3>
-					<input type="radio" name="phoneWeight" value="Very Important" required id = "phoneWeightVeryImportant"/>
-					<label for = "phoneWeightVeryImportant">Very Important</label>
-					<br/>
-					<input type="radio" name="phoneWeight" value="Important" id = "phoneWeightImportant"/>
-					<label for = "phoneWeightImportant">Important</label>
-					<br/>
-					<input type="radio" name="phoneWeight" value="Average" id = "phoneWeightAverage"/>
-					<label for = "phoneWeightAverage">Average</label>
-					<br/>
-					<input type="radio" name="phoneWeight" value="Not Important" id = "phoneWeightNotImportant"/>
-					<label for = "phoneWeightNotImportant">Not Important</label>
-					<br/>
-					<h3>Is a front facing camera important to you?</h3>                    
-					<input type="radio" name="frontCamera" value="Yes" required id = "frontCameraYes"/>
-					<label for = "frontCameraYes">Yes</label>
-					<br/>
-					<input type="radio" name="frontCamera" value="No" id = "frontCameraNo"/>
-					<label for = "frontCameraNo">No</label>
-					<br/>
-					<h3>How much storage would you want on your phone?</h3>                    
-					<input type="radio" name="storageAmount" value="16 GB" required id = "storageAmount16GB" required/>
-					<label for = "storageAmount16GB">16 GB</label>
-					<br/>
-					<input type="radio" name="storageAmount" value="32 GB" id = "storageAmount32GB"/>
-					<label for = "storageAmount32GB">32 GB</label>
-					<br/>
-					<input type="radio" name="storageAmount" value="64 GB" id = "storageAmount64GB"/>
-					<label for = "storageAmount64GB">64 GB</label>
-					<br/>
-					<input type="radio" name="storageAmount" value="128 GB" id = "storageAmount128GB"/>
-					<label for = "storageAmount128GB">128 GB</label>
-					<br/>
-					<input type="radio" name="storageAmount" value="256 GB" id = "storageAmount256GB"/>
-					<label for = "storageAmount256GB">256 GB</label>
-					<br/>
-					<input type="radio" name="storageAmount" value="512 GB" id = "storageAmount512GB"/>
-					<label for = "storageAmount512GB">512 GB</label>
-					<br/>
-					<h3>Would you want to be able to upgrade the amount of storage memory of the phone with an SD card?</h3>
-					<input type="radio" name="upgradeStorage" value="Yes" id = "upgradeStorageYes" required/>
-					<label for = "upgradeStorageYes">Yes</label>
-					<br/>
-					<input type="radio" name="upgradeStorage" value="No" id = "upgradeStorageNo"/>
-					<label for = "upgradeStorageNo">No</label>
-					<br/>					
-				</fieldset>
+					
+					How important is the lightness of the phone to you?
+                    <br/>
+
+                    <input type="radio" name="phoneWeight" value="Very Important" required id = "phoneWeightVeryImportant"/>
+                    <label for = "phoneWeightVeryImportant">Very Important</label>
+                    <br/>
+
+                    <input type="radio" name="phoneWeight" value="Important" id = "phoneWeightImportant"/>
+                    <label for = "phoneWeightImportant">Important</label>
+                    <br/>
+
+                    <input type="radio" name="phoneWeight" value="Average" id = "phoneWeightAverage"/>
+                    <label for = "phoneWeightAverage">Average</label>
+                    <br/>
+
+                    <input type="radio" name="phoneWeight" value="Not Important" id = "phoneWeightNotImportant"/>
+                    <label for = "phoneWeightNotImportant">Not Important</label>
+                    <br/>
+                    <br/>
+
+                    Is a front facing camera important to you?
+                    <br/>
+                    
+                    <input type="radio" name="frontCamera" value="Yes" required id = "frontCameraYes"/>
+                    <label for = "frontCameraYes">Yes</label>
+                    <br/>
+
+                    <input type="radio" name="frontCamera" value="No" id = "frontCameraNo"/>
+                    <label for = "frontCameraNo">No</label>
+                    <br/>
+                    <br/>
+
+                    How much storage would you want on your phone?
+                    <br/>
+                    
+                    <input type="radio" name="storageAmount" value="16 GB" required id = "storageAmount16GB" required/>
+                    <label for = "storageAmount16GB">16 GB</label>
+                    <br/>
+
+                    <input type="radio" name="storageAmount" value="32 GB" id = "storageAmount32GB"/>
+                    <label for = "storageAmount32GB">32 GB</label>
+                    <br/>
+
+                    <input type="radio" name="storageAmount" value="64 GB" id = "storageAmount64GB"/>
+                    <label for = "storageAmount64GB">64 GB</label>
+                    <br/>
+
+                    <input type="radio" name="storageAmount" value="128 GB" id = "storageAmount128GB"/>
+                    <label for = "storageAmount128GB">128 GB</label>
+                    <br/>
+
+                    <input type="radio" name="storageAmount" value="256 GB" id = "storageAmount256GB"/>
+                    <label for = "storageAmount256GB">256 GB</label>
+                    <br/>
+
+                    <input type="radio" name="storageAmount" value="512 GB" id = "storageAmount512GB"/>
+                    <label for = "storageAmount512GB">512 GB</label>
+                    <br/>
+                    <br/>
+
+                    Would you want to be able to upgrade the amount of storage memory of the phone with an SD card?
+                    <br/>
+
+                    <input type="radio" name="upgradeStorage" value="Yes" id = "upgradeStorageYes" required/>
+                    <label for = "upgradeStorageYes">Yes</label>
+                    <br/>
+
+                    <input type="radio" name="upgradeStorage" value="No" id = "upgradeStorageNo"/>
+                    <label for = "upgradeStorageNo">No</label>
+                    <br/>
+					
+                </fieldset>
+				
 				<input type="submit" />
-				<input type="reset" />
 			</form>			
 		</section>		
 		<footer>
@@ -224,7 +315,7 @@
 				var inputs = document.getElementsByTagName("input");
 				for(i in inputs)
 				{
-					if((inputs[i].type !="radio" && inputs[i].type !="checkbox") || inputs[i].checked && !inputs[i].disabled && inputs[i].type != "submit" && inputs[i].type != "reset")
+					if((inputs[i].type !="radio" && inputs[i].type !="checkbox") || inputs[i].checked && !inputs[i].disabled && inputs[i].type != "submit")
 					{
 						console.log(inputs[i].value);
 					}
@@ -234,5 +325,5 @@
 				return false;
 			}
 		</script>
-	</body>
+    </body>
 </html>

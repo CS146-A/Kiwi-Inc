@@ -84,9 +84,6 @@ h1, h2 {
 	padding-bottom: 5px;
 	padding-top: 10px;
 }
-h3 {
-	font-size: 1.1em;
-}
 footer {
 	position: absolute;
 	bottom: 0;
@@ -127,10 +124,8 @@ input:required:valid{
 	outline: none;
 }
 label{
-    font-size:0.8em;    
-}
-label h3{
-	font-size: 1.25em;
+    font-size:0.8em;
+    
 }
 @media screen and (max-width: 480px){
  /*Phone */  
