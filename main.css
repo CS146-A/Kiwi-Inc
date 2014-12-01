@@ -96,6 +96,13 @@ footer {
 .navigation{
     color:white;
 }
+.emphasis{
+	font-size: 1.5em;
+}
+.important{
+	font-size: 1.5em;
+	text-decoration: underline;
+}
 /* Forms */
 form{
 	width: 70%;
@@ -131,8 +138,11 @@ label h3{
         width: 50%;   
     }
     body {
-     font-size: .85em;   
+		font-size: .85em;   
     }
+	section ul, section ol{
+		width: 70%;
+	}
 }
 @media screen and (min-width: 481px) and (max-width: 800px){
     /* Tablet */
@@ -142,6 +152,9 @@ label h3{
     body {
      font-size: 1em;   
     }
+	section ul, section ol{
+		width: 50%;
+	}
 }
 @media screen and (min-width: 801px){
     /* Computer */
