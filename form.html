@@ -224,13 +224,13 @@
 				var inputs = document.getElementsByTagName("input");
 				for(i in inputs)
 				{
-					if((inputs[i].type !="radio" && inputs[i].type !="checkbox") || inputs[i].checked && !inputs[i].disabled && inputs[i].type != "submit" && inputs[i].type != "reset")
+					if(((inputs[i].type !="radio" && inputs[i].type !="checkbox") || inputs[i].checked) && !inputs[i].disabled && inputs[i].type != "submit" && inputs[i].type != "reset")
 					{
 						console.log(inputs[i].value);
 					}
 					inputs[i].disabled = true;
 				}
-				alert("Thanks for your interest!");
+				//alert("Thanks for your interest!");
 				return false;
 			}
 		</script>
