@@ -33,6 +33,13 @@ nav li{
     display:inline;
     margin-left: 10px;
 }
+a {
+	color: #46A4E2;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
 li a{
     color: white; 
     text-decoration: none;
